@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    
+    
+
+}
+
+nav{
+height: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2rem 6rem;
+flex-direction: row;
+}
+nav>h1{
+
+    flex-grow: 1 ;
+    font-size: 1.8rem;
+    margin-left: -2.5rem;
+}
+
+nav>ul{
+    flex-grow: 1;
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+nav>ul li{
+    border-bottom: 3px solid rgba(255, 0, 0, 0);
+
+}
+nav>ul li:hover{
+    border-bottom: 3px solid red;
+}
+nav>ul li a{
+ font-size: 1rem;
+ text-decoration: none;
+ color: black;
+ font-weight: bold;
+}
+nav>button{
+    padding: .4rem 1rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    border: 1.5px solid hwb(330 10% 88% / 0.995);
+    background-color: transparent;
+
+}
+nav>button:hover{
+    border: 1.5px solid red;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+
+}
+.parent{
+    display: flex;
+    
+}
+.parent .hero{
+    display: flex;
+    flex-direction: column;
+    width: 50%;   
+    /* background-color: antiquewhite;  */
+}
+.hero h1{
+    font-weight: 900;
+    margin: 3rem 6rem 0 3.6rem;
+    font-size: 4rem;
+}
+.name>h1{
+    margin-top: 0;
+}
+.hero .para{ 
+    
+    padding: 1rem 14rem 1rem 6rem;
+    font-size: 1.3rem;
+
+}
+.hero .hero-buttons{
+    padding: .8rem 6rem;
+    margin: 1rem 0;
+}
+.hero .hero-buttons .red{
+    background-color: red;
+    padding: .8rem 1.5rem;
+    color: white;
+    font-size: 1rem;
+    border:2px solid transparent;
+}
+.hero .hero-buttons .red:hover{
+    border:2px solid red;
+    color: red;
+    background-color: transparent;
+    cursor: pointer;
+}
+.hero .hero-buttons .flat{
+    background-color: transparent;
+    padding: .8rem .2rem .8rem 1.5rem;
+    color: rgb(28, 21, 21);
+    font-size: 1rem;
+    border: none;
+}
+.hero .hero-buttons .flat:hover,.hero .hero-buttons svg:hover{
+    color: red;
+    cursor: pointer;
+    fill: red;
+}
+
+.hero .stats{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:1rem 1rem 1rem 6rem;
+    gap: 2rem;
+}
+.hero .stats div{
+    font-size: 1rem;
+    background-color: aliceblue;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    border: 1px solid gray;
+    background-color: transparent;
+   
+}
+.hero .stats div:hover{
+    border: 1px solid red;
+
+}
+.hero .stats div h3{
+    color: rgb(20, 11, 11);
+    font-size: 2.2rem;
+}
+
+.hero .hero-bottom{
+    background-color: rgb(13, 10, 10);
+    padding: 3rem 2rem 3rem 6rem;
+    display: flex;
+    color: #fff;
+}
+.hero .hero-bottom .left {
+    width: 12rem;
+}
+
+.hero .hero-bottom .left button{
+    background-color: rgb(255, 196, 0);
+    border: 2px solid rgb(255, 196, 0);
+    padding: .6rem 1.8rem ;
+    margin-top: 1rem;
+    border: none;
+}
+.hero .hero-bottom .left button:hover{
+    border: 2px solid rgb(255, 196, 0);
+    color: rgb(255, 196, 0);
+    background-color: black;
+    cursor: pointer;
+}
+.hero .hero-bottom .right{
+    padding: 0rem 6rem;
+}
+.hero .hero-bottom .right div{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: medium;
+    padding-bottom: .5rem;
+    gap: 3rem;
+    margin-top: .2rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.532);
+}
+.hero .hero-bottom .right div:hover{ 
+    border-bottom: 1px solid rgb(255, 196, 0);
+
+}
+
+
+.parent .hero-image{
+    background-color: aquamarine;
+    width: 50%;
+    background-image: url("https://cdn2.photostockeditor.com/t/2712/person-man-using-laptop-beside-woman-holding-pen-human-human-image.jpg");
+    background-size: cover;
+
+}
+
+.parent .hero-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.parent .hero-image .sub{
+    padding: .4rem;
+    background-color: #fff;
+    box-shadow: 2px 4px 20px rgba(128, 128, 128, 0.8);
+
+}
+
+.parent .hero-image .sub-error{
+    padding: .4rem;
+    background-color: #fff;
+    box-shadow: 2px 4px 20px rgba(128, 128, 128, 0.8);
+    border: 2px solid red;
+
+}
+
+.parent .hero-image .sub input{
+    padding: .5rem;
+    border: none;
+    font-size: 1rem;
+    
+}
+.parent .hero-image .sub input:focus{
+    outline: none;
+}
+.parent .hero-image .sub button{
+    padding: .5rem 2rem;
+    background-color: black;
+    color: #fff;
+
+}
+.parent .hero-image .sub button:hover{
+    background-color: red;
+    color: #fff;
+    border-color: red;
+}
+.errorMessage{
+    color: red;
+    display: block;
+    
+}
